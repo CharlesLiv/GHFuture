@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Masonry/View+MASAdditions.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *label = [UILabel new];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) - 100, ([UIScreen mainScreen].bounds.size.height / 2) - 25, 200, 50)];
     label.text = @"God Hu Zui Li Hai";
-    label.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) - 100, ([UIScreen mainScreen].bounds.size.height / 2) - 25, 200, 50);
-    label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     
 }
