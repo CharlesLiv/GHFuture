@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [UILabel new];
+    label.text = @"God Hu Zui Li Hai";
+    label.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) - 100, ([UIScreen mainScreen].bounds.size.height / 2) - 25, 200, 50);
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    
 }
 
 
